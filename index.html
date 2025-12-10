@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture-Controlled 3D Particles (Mobile)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="video" autoplay playsinline style="display: none;"></video>
+
+    <div id="three-container"></div>
+
+    <div id="ui-container">
+        <h3 class="ui-title">✨ 3D Particle Controls</h3>
+        <hr>
+
+        <label for="template-selector">Template:</label>
+        <select id="template-selector" class="ui-control">
+            <option value="heart">Heart ❤️</option>
+            <option value="saturn">Saturn Ring 🪐</option>
+            <option value="fireworks">Fireworks 💥</option>
+            <option value="sphere">Sphere</option>
+        </select>
+        
+        <br><br>
+
+        <label for="color-selector">Color:</label>
+        <input type="color" id="color-selector" class="ui-control" value="#2087FF">
+        
+        <br><br>
+        
+        <div class="gesture-info">
+            **Gesture Control:**
+            <p>Close hands 👐 to **shrink**.</p>
+            <p>Open hands 🖐️ to **expand**.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.130.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #111; /* Dark background for particle visibility */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Three.js Canvas Container */
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* UI Control Panel */
+#ui-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Modern blur effect */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 250px;
+}
+
+.ui-title {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #bbb;
+}
+
+.ui-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+input[type="color"] {
+    height: 40px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.gesture-info {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+    font-size: 0.9em;
+    color: #aaa;
+}
